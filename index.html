@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial</title>
+    <link href="general.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h2>Clase 22 de agosto del 2024</h2>
+            <h3>Algoritmo de busqueda</h3>
+            <p>
+                Los algoritmos de búsqueda son técnicas empleadas para localizar un elemento dentro de una estructura de datos, como listas, matrices o árboles. Aquí tienes un resumen de los tipos más comunes de algoritmos de búsqueda
+            </p>
+            <p>
+                <ul>
+                    <h3>1. Búsqueda Lineal</h3>
+                    <li>
+                        Descripción: Recorre secuencialmente cada elemento de la lista desde el principio hasta encontrar el elemento buscado o hasta llegar al final.
+                    </li>
+                    
+                    <li>
+                        Complejidad: O(n), donde n es el número de elementos en la lista.
+                    </li>
+                    <li>
+                        Ventajas: Simple de implementar y no requiere que los elementos estén ordenados.
+                    </li>
+                    <li>
+                        Desventajas: Ineficiente para listas grandes.
+                    </li>
+                </ul>
+                <ul>
+                    <h3>2. Búsqueda Binaria</h3>
+                    <li>
+                        Descripción: Divide la lista ordenada en dos partes, compara el elemento del medio con el elemento buscado y descarta la mitad en la que no puede estar. Repite el proceso en la mitad restante.
+                    </li>
+                    <li>
+                        Complejidad: O(log n), donde n es el número de elementos.
+                    </li>
+                    <li>
+                        Ventajas: Mucho más rápida que la búsqueda lineal para listas grandes.
+                    </li>
+                    <li>
+                        Desventajas: Requiere que la lista esté ordenada previamente.
+                    </li>
+                </ul>
+                
+                <ul>
+                    <h3>3. Búsqueda Binaria en Árboles (Búsqueda en Árbol Binario de Búsqueda)</h3>
+                    <li>
+                        Descripción: Utiliza un árbol binario de búsqueda donde cada nodo tiene un valor mayor que los nodos en su subárbol izquierdo y menor que los nodos en su subárbol derecho. Busca descendiendo por el árbol comparando el valor buscado con el nodo actual.
+                    </li>
+                    <li>
+                        Complejidad: O(log n) en promedio.
+                    </li>
+                    <li>
+                        Ventajas: Eficiente en términos de tiempo de búsqueda y permite operaciones dinámicas como inserciones y borrados.
+                    </li>
+                    <li>
+                        Desventajas: En el peor caso (árbol desequilibrado), la complejidad puede ser O(n).
+                    </li>
+                </ul>
+                
+                <ul>
+                    <h3>4. Búsqueda de Interpolación</h3>
+                    <li>
+                        Descripción: Similar a la búsqueda binaria, pero en lugar de dividir el espacio de búsqueda a la mitad, estima la posición del elemento buscado basado en el valor.
+                    </li>
+                    <li>
+                        Complejidad: O(log log n) para listas ordenadas uniformemente distribuidas.
+                    </li>
+                    <li>
+                        Ventajas: Puede ser más rápida que la búsqueda binaria para listas grandes y bien distribuidas.
+                    </li>
+                    <li>
+                        Desventajas: No es eficiente para listas no uniformemente distribuidas.
+                    </li>
+                </ul>
+            </p>
+        </section>
+    </div>
+</body>
+</html>
